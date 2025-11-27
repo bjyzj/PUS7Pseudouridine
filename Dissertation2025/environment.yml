@@ -1,0 +1,48 @@
+name: pse_project
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+
+  # -------------------------
+  # PYTHON
+  # -------------------------
+  - python=3.10
+  - scipy=1.16.1
+  - biopython=1.85
+  - matplotlib=3.10.0
+  - scikit-learn=1.7.1
+  - numpy
+  - pandas
+  - seaborn
+  - xgboost=3.0.3
+  - shap=0.48.0
+
+  - pip:
+      - logomaker==0.8.7   
+  
+  # -------------------------
+  # R 
+  # -------------------------
+  - r-base=4.3
+  - r-tidyverse
+  - r-readxl
+  - r-mclust=6.1.1
+
+  # -------------------------
+  # BIOCONDUCTOR
+  # -------------------------
+  - bioconductor-biomart
+  - bioconductor-rtracklayer
+  - bioconductor-s4vectors
+  - bioconductor-iranges
+  - bioconductor-genomicranges
+  - bioconductor-biostrings
+  - bioconductor-bsgenome
+  - bioconductor-bsgenome.hsapiens.ucsc.hg38
+
+  # -------------------------
+  # R packages from CRAN 
+  # -------------------------
+  - r-rentrez
